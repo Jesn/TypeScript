@@ -23,6 +23,7 @@
     <Content Include="index.html" />
     <Content Include="Scripts\plugins\ts\jquery\jquery-2.1.4.min.js" />
     <Content Include="Scripts\plugins\ts\jquery\README.md" />
+    <Content Include="Document\TypeScript中文入门指南详解案例教程.pdf" />
     <None Include="Scripts\_references.js" />
     <Content Include="Scripts\plugins\ts\jquery\parallax.html" />
     <Content Include="Scripts\plugins\ts\jquery\starfield.png" />
