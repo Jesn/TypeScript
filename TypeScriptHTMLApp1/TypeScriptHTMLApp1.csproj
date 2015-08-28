@@ -16,26 +16,58 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.css" />
     <Content Include="app.js" />
     <Content Include="index.html" />
+    <Content Include="module\alias\moduleAlias.js" />
+    <Content Include="module\alias\test.html" />
+    <Content Include="module\alias\Test.js" />
+    <Content Include="module\Utils\LettersOnlyValidator.js" />
+    <Content Include="module\Utils\moduleTest.html" />
+    <Content Include="module\Utils\test.js" />
+    <Content Include="module\Utils2\EmailValidator.js" />
+    <Content Include="module\Utils2\TelValidator.js" />
+    <Content Include="module\Utils2\test.html" />
+    <Content Include="module\Utils2\Test.js" />
+    <Content Include="module\Utils2\ValidationUtils3.js" />
+    <Content Include="module\Utils3\test.html" />
+    <Content Include="module\Utils1\UtilsTest.html" />
+    <Content Include="module\Utils1\UtilsTest.js" />
+    <Content Include="module\Utils\Validation.js" />
+    <Content Include="module\Utils1\ValidationUtils.js" />
+    <Content Include="module\Utils\ZipCodeValidator.js" />
     <Content Include="Scripts\plugins\ts\jquery\jquery-2.1.4.min.js" />
     <Content Include="Scripts\plugins\ts\jquery\README.md" />
     <Content Include="Document\TypeScript中文入门指南详解案例教程.pdf" />
     <None Include="Scripts\_references.js" />
     <Content Include="Scripts\plugins\ts\jquery\parallax.html" />
     <Content Include="Scripts\plugins\ts\jquery\starfield.png" />
+    <Content Include="Scripts\require.js" />
     <Content Include="ts-Interface.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
-    <TypeScriptCompile Include="module\LettersOnlyValidator.ts" />
-    <TypeScriptCompile Include="module\test.ts" />
-    <TypeScriptCompile Include="module\Validation.ts" />
-    <TypeScriptCompile Include="module\ZipCodeValidator.ts" />
+    <TypeScriptCompile Include="module\alias\moduleAlias.ts" />
+    <TypeScriptCompile Include="module\alias\Test.ts" />
+    <TypeScriptCompile Include="module\declareModule\declare1.ts" />
+    <TypeScriptCompile Include="module\Utils\LettersOnlyValidator.ts" />
+    <TypeScriptCompile Include="module\Utils\test.ts" />
+    <TypeScriptCompile Include="module\Utils2\EmailValidator.ts" />
+    <TypeScriptCompile Include="module\Utils2\TelValidator.ts" />
+    <TypeScriptCompile Include="module\Utils2\Test.ts" />
+    <TypeScriptCompile Include="module\Utils2\ValidationUtils3.ts" />
+    <TypeScriptCompile Include="module\Utils3\EmailValidator3.ts" />
+    <TypeScriptCompile Include="module\Utils3\TelValidator3.ts" />
+    <TypeScriptCompile Include="module\Utils3\Test.ts" />
+    <TypeScriptCompile Include="module\Utils3\ValidationUtils3.ts" />
+    <TypeScriptCompile Include="module\Utils1\UtilsTest.ts" />
+    <TypeScriptCompile Include="module\Utils\Validation.ts" />
+    <TypeScriptCompile Include="module\Utils1\ValidationUtils.ts" />
+    <TypeScriptCompile Include="module\Utils\ZipCodeValidator.ts" />
     <TypeScriptCompile Include="Scripts\plugins\ts\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="Scripts\plugins\ts\jquery\parallax.ts" />
     <TypeScriptCompile Include="ts-class.ts" />
@@ -79,9 +111,16 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
-    <TypeScriptModuleKind>none</TypeScriptModuleKind>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
     <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
     <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <TypeScriptRemoveComments>true</TypeScriptRemoveComments>

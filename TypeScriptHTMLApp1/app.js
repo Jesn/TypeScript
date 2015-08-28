@@ -73,12 +73,12 @@ var Human = (function () {
         //TypeScript 为JavaScript 新增了枚举这种标准的集合数据类型。
         //和在c#中一样，枚举是为一组数值类型一组更友好的名称
         //5.1、enum Color { Red, Green, Blue, Yellow };
-        var c = 2 /* Blue */; //从枚举里面拿出Blue出来赋给一个叫c 的变量
+        var c = Color.Blue; //从枚举里面拿出Blue出来赋给一个叫c 的变量
         //5.2、手动枚举所有值都设置
         //默认枚举类型其实数值从0 开始，你可以可用手动设置某一个成员的数值。
         //例如我们可以将上文的起始值定为1：
         //enum Color1 { Red = 1, Green = 2, Blue = 3, Yellow = 4 };
-        var c1 = 3 /* Blue */;
+        var c1 = Color1.Blue;
         //5.3、手动设置全部的枚举成员
         var colorName = Color2[2];
         console.log("输出的是枚举名称：" + colorName);

@@ -1,8 +1,9 @@
-///<reference path="Validation.ts" />
+/// <reference path="Validation.ts" />
 var Validation;
 (function (Validation) {
     //匹配0-9的数字
     var numberRegexp = /^[0-9]+$/;
+    /**验证是否长度为5并且为数字*/
     var ZipCodeValidator = (function () {
         function ZipCodeValidator() {
         }
