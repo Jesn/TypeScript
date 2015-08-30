@@ -10,7 +10,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <TypeScriptToolsVersion>1.4</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>1.5</TypeScriptToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -25,6 +25,8 @@
     <Content Include="module\alias\moduleAlias.js" />
     <Content Include="module\alias\test.html" />
     <Content Include="module\alias\Test.js" />
+    <Content Include="module\Externalmodule\index.html" />
+    <Content Include="module\Externalmodule\require.js" />
     <Content Include="module\Utils\LettersOnlyValidator.js" />
     <Content Include="module\Utils\moduleTest.html" />
     <Content Include="module\Utils\test.js" />
@@ -51,9 +53,18 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="Function\ts-function.ts" />
+    <TypeScriptCompile Include="Function\ts-this.ts" />
+    <TypeScriptCompile Include="Generic\Identity.ts" />
+    <TypeScriptCompile Include="Merging\MergingInterfaces.ts" />
+    <TypeScriptCompile Include="Mixin\Mixin.ts" />
     <TypeScriptCompile Include="module\alias\moduleAlias.ts" />
     <TypeScriptCompile Include="module\alias\Test.ts" />
     <TypeScriptCompile Include="module\declareModule\declare1.ts" />
+    <TypeScriptCompile Include="module\Externalmodule\app.ts" />
+    <TypeScriptCompile Include="module\Externalmodule\Compoment.ts" />
+    <TypeScriptCompile Include="module\Externalmodule\node.ts" />
+    <TypeScriptCompile Include="module\Externalmodule\panel.ts" />
     <TypeScriptCompile Include="module\Utils\LettersOnlyValidator.ts" />
     <TypeScriptCompile Include="module\Utils\test.ts" />
     <TypeScriptCompile Include="module\Utils2\EmailValidator.ts" />
@@ -73,6 +84,7 @@
     <TypeScriptCompile Include="ts-class.ts" />
     <TypeScriptCompile Include="ts-implements.ts" />
     <TypeScriptCompile Include="ts-Interface.ts" />
+    <TypeScriptCompile Include="TypeCompatibility\TypeCompatibility.ts" />
   </ItemGroup>
   <ItemGroup>
     <None Include="web.Debug.config">
@@ -82,6 +94,7 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>
@@ -111,7 +124,7 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
-    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+    <TypeScriptModuleKind>amd</TypeScriptModuleKind>
     <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
     <TypeScriptTarget>ES5</TypeScriptTarget>
     <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
