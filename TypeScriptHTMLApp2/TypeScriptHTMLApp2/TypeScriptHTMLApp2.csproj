@@ -32,6 +32,7 @@
     <TypeScriptCompile Include="app.ts" />
     <TypeScriptCompile Include="Greeter\app.ts" />
     <TypeScriptCompile Include="Greeter\Greeter.ts" />
+    <TypeScriptCompile Include="Let\let.ts" />
   </ItemGroup>
   <ItemGroup>
     <None Include="web.Debug.config">

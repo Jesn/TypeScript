@@ -18,4 +18,5 @@
     stop() {
         clearTimeout(this.timerToken);
     }
+
 }
